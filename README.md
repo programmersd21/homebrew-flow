@@ -6,5 +6,5 @@ https://github.com/programmersd21/flow
 install this:
 
 ```sh
-brew install programmersd21/tap/flow
+brew install programmersd21/flow/flow
 ```
