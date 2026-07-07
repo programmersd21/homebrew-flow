@@ -5,21 +5,21 @@
 class Flow < Formula
   desc "Real-time network bandwidth monitor for the terminal"
   homepage "https://github.com/programmersd21/flow"
-  version "0.1.3"
+  version "0.1.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/programmersd21/flow/releases/download/v0.1.3/flow_0.1.3_darwin_amd64.tar.gz"
-      sha256 "ffca83d0a1a164204606bef1bd06d06067ffb4754678fb01f9ed1bf896d74bb6"
+      url "https://github.com/programmersd21/flow/releases/download/v0.1.4/flow_0.1.4_darwin_amd64.tar.gz"
+      sha256 "d49be17135843a1401ee97b495f4c7f69a3add058c6d79745ca7b26b90fe08b3"
 
       define_method(:install) do
         bin.install "flow"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/programmersd21/flow/releases/download/v0.1.3/flow_0.1.3_darwin_arm64.tar.gz"
-      sha256 "6df899489ae9d28b0d148a677b0c2d654657ebaef418025c5efc6d9021ec8bc0"
+      url "https://github.com/programmersd21/flow/releases/download/v0.1.4/flow_0.1.4_darwin_arm64.tar.gz"
+      sha256 "2444867761d8b2a51f1d3d77706f319198901bf522291d779cdd71e6afcc5934"
 
       define_method(:install) do
         bin.install "flow"
@@ -29,15 +29,15 @@ class Flow < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/programmersd21/flow/releases/download/v0.1.3/flow_0.1.3_linux_amd64.tar.gz"
-      sha256 "eb8c95e6ebe4d9b4b09fb3de5d53360710dc9f858328c07fc89ec05a033eee3a"
+      url "https://github.com/programmersd21/flow/releases/download/v0.1.4/flow_0.1.4_linux_amd64.tar.gz"
+      sha256 "2739046098f53a7846f636b9358ad4ec9aad64f538ac42a178e20351990a5fbd"
       define_method(:install) do
         bin.install "flow"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/programmersd21/flow/releases/download/v0.1.3/flow_0.1.3_linux_arm64.tar.gz"
-      sha256 "8362c5f11c15b1e435bb9ec343c859019bd04c15d14f9f1853a3d368c1fb63a8"
+      url "https://github.com/programmersd21/flow/releases/download/v0.1.4/flow_0.1.4_linux_arm64.tar.gz"
+      sha256 "94c2c51b95ff1d11511e85a62639436f07cc13f8cb2556e589d5d8a45ef5c668"
       define_method(:install) do
         bin.install "flow"
       end
