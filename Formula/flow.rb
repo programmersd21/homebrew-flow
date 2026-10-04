@@ -11,7 +11,7 @@ class Flow < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/programmersd21/flow/releases/download/v0.3.2/flow_0.3.2_darwin_amd64.tar.gz"
-      sha256 "4093622ec07d0658999e1a330a2582bc939e9592ee8f59789c0d721a6917f712"
+      sha256 "d8a2f5591076b47c53e02e27d5d6b4647cecd97904c96067598cf98d16d7d632"
 
       define_method(:install) do
         bin.install "flow"
@@ -19,7 +19,7 @@ class Flow < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/programmersd21/flow/releases/download/v0.3.2/flow_0.3.2_darwin_arm64.tar.gz"
-      sha256 "5006d78e0c39f865e56e817a6c2990cd6eea73e0cedc37a8922acf833017bb25"
+      sha256 "6cebbc20715b9788cb5c01dcc4e2470187470ce5b9e92898101e042c0ed468c8"
 
       define_method(:install) do
         bin.install "flow"
@@ -30,14 +30,14 @@ class Flow < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/programmersd21/flow/releases/download/v0.3.2/flow_0.3.2_linux_amd64.tar.gz"
-      sha256 "0c6778b8010b19338639c0eba59d1262c657171f1742017be0eb1940fc2c96ee"
+      sha256 "5e07b183678710f7a1d35cdf055aa02b1d549a1a76e8296d91797be07be9b64e"
       define_method(:install) do
         bin.install "flow"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/programmersd21/flow/releases/download/v0.3.2/flow_0.3.2_linux_arm64.tar.gz"
-      sha256 "37f2baabe510faba3cb7b315aea3d99180e255ea9b29bbb146ac91b931c2aebf"
+      sha256 "cc1ccc63bea14d92bc1d0b160bce6fe2ed42d9a05fc996436397acd3296e8d84"
       define_method(:install) do
         bin.install "flow"
       end
